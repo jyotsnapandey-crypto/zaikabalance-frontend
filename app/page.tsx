@@ -5,6 +5,12 @@ import { Calculator, Scan, BookOpen, Target, Search, Star, Clock, Users, Leaf, H
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import AuthForm from '@/components/AuthForm';
+import DietForm from '@/components/DietForm';
+import NutrientTrackerForm from '@/components/NutrientTrackerForm';
+import ReminderForm from '@/components/ReminderForm';
+import FoodPredictForm from '@/components/FoodPredictForm';
+import FeedbackForm from '@/components/FeedbackForm';
 
 export default function Component() {
   const features = [
@@ -101,6 +107,45 @@ export default function Component() {
       tags: ["Anti-inflammatory", "Immunity"],
     },
   ]
+  return (
+    <main className="min-h-screen bg-gray-50 px-4 py-10 space-y-16">
+      <section>
+        <h1 className="text-3xl font-bold mb-6 text-center">🍽 Smart Diet Recommendation App</h1>
+        <AuthForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">1️⃣ Diet Plan Recommendation</h2>
+        <DietForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">2️⃣ Nutrient Tracker</h2>
+        <NutrientTrackerForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">3️⃣ Food Reminder</h2>
+        <ReminderForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">4️⃣ Food Predictor</h2>
+        <FoodPredictForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">5️⃣ Submit Feedback</h2>
+        <FeedbackForm />
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">6️⃣ AI Chatbot Assistant</h2>
+        <ChatbotAssistant />
+      </section>
+    </main>
+  );
+}
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-orange-50 to-amber-50 relative overflow-hidden">
