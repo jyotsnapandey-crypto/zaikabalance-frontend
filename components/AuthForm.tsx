@@ -92,16 +92,4 @@ const AuthForm: React.FC = () => {
 export default AuthForm;
 
 
-Update app/page.tsx or add to a new page
 
-import AuthForm from '@/components/AuthForm';
-// other imports...
-
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-gray-100 px-4 py-8">
-      <AuthForm />
-      {/* other forms below if needed */}
-    </main>
-  );
-}
