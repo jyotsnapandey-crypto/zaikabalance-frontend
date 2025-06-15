@@ -24,7 +24,7 @@ const AuthForm: React.FC = () => {
     const endpoint = isLogin ? 'login' : 'signup';
 
     try {
-      const res = await axios.post(https://zaikabalance-backend.onrender.com/${endpoint}, {
+      const res = await axios.post('https://zaikabalance-backend.onrender.com/${endpoint}', {
         email,
         password,
       });
